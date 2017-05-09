@@ -1,27 +1,9 @@
 webpackJsonp([1,4],{
 
-/***/ 147:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(22)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 148:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(22)();
+exports = module.exports = __webpack_require__(17)();
 // imports
 
 
@@ -39,7 +21,7 @@ module.exports = module.exports.toString();
 /***/ 149:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(22)();
+exports = module.exports = __webpack_require__(17)();
 // imports
 
 
@@ -54,28 +36,46 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 152:
-/***/ (function(module, exports) {
+/***/ 150:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<header>\n  <nav>\n    <div class=\"nav-wrapper\">\n      <ul class=\"left \">\n        <li class=\"tab\"><a (click)=\"show = 'Resume'\">Resume</a></li>\n        <li class=\"tab\"><a (click)=\"show = 'Portfolio'\">Portfolio</a></li>\n      </ul>\n    </div>\n  </nav>\n  <div class=\"heading\">\n    <h1 class=\"name\">Wojciech Ryba</h1>\n    <h5 class=\"name\">Junior Front-End Developer</h5>\n  </div>\n</header>\n<main>\n    <app-resume *ngIf=\"show === 'Resume'\"></app-resume>\n    <app-portfolio *ngIf=\"show === 'Portfolio'\"></app-portfolio>\n</main>\n<footer class=\"page-footer blue darken-1\" id=\"footer\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col l6 s12\">\n        <h5 class=\"white-text\">Contact Info</h5>\n        <p class=\"grey-text text-lighten-4\">You can contact me at wojryba@gmail.com</p>\n      </div>\n      <div class=\"col l4 offset-l2 s12\">\n        <a href=\"https://github.com/wojryba/\"><i class=\"fa fa-github fa-4x\" aria-hidden=\"true\"></i></a>\n        <a href=\"https://www.facebook.com/wojryba\"><i class=\"fa fa-facebook-official fa-4x\" aria-hidden=\"true\"></i></a>\n      </div>\n    </div>\n  </div>\n  <div class=\"footer-copyright\">\n    <div class=\"container\">\n    © 2017 Wojciech Ryba\n    </div>\n  </div>\n</footer>\n"
+exports = module.exports = __webpack_require__(17)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 153:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"projects\" *ngIf=\"show === 'main'\" [@enter]>\n  <div class=\"leftProject\">\n    <div class=\"projectImg right\">\n      <img src=\"../../../assets/momentum.png\" alt=\"Momentum Project\" />\n    </div>\n    <md-card>\n      <md-card-title>Spotify Clone</md-card-title>\n      <md-card-content>This is a clone of spotify website and it's WebPlayer. It uses mostly Angular together with Spotify WebApi. Node and Express are also in use.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/spotify_clone\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://github.com/wojryba/spotify_clone\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n  <div class=\"rightProject\">\n\n  </div>\n</div>\n\n<div class=\"projects\" *ngIf=\"show === 'remote'\" [@enter]>\n  <div class=\"leftProject\">\n    <div class=\"projectImg right\">\n      <img src=\"../../../assets/momentum.png\" alt=\"Momentum Project\" />\n    </div>\n    <md-card>\n      <md-card-title>Momentum Clone</md-card-title>\n      <md-card-content>A remote team project made with <a href=\"https://github.com/NinoMaj/\">Nino_maj</a> and <a href=\"https://github.com/loolys\">Looly</a>. <br />\n        React, Redux, Node, Express, MongoDB.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/momentum_clone-1\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://serene-stream-26049.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n  <div class=\"rightProject\">\n    <div class=\"projectImg left\">\n      <img src=\"../../../assets/bot.png\" alt=\"Slack bot Project\" />\n    </div>\n    <md-card>\n      <md-card-title>Number's Bot</md-card-title>\n      <md-card-content>Remote team project produced together with <a href=\"https://github.com/asanhix\">Asanhix</a>. <br />\n        Slack Bot made with Node.JS.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/A-F-Numbers-bot\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://rhubarb-pie-22231.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n</div>\n\n<div class=\"projects\" *ngIf=\"show === 'apps'\" [@enter]>\n  <div class=\"leftProject\">\n    <div class=\"projectImg right\">\n      <img src=\"../../../assets/picterest.png\" alt=\"Pinterest Clone\" />\n    </div>\n    <md-card>\n      <md-card-title>Pinterest Clone</md-card-title>\n      <md-card-content>Angular app, with node, express and mongodb in the backend.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/pinterest_clone\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://rocky-taiga-53739.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n\n  <div class=\"rightProject\">\n    <div class=\"projectImg left\">\n      <img src=\"../../../assets/stock.png\" alt=\"Chart the stock Market\" />\n    </div>\n    <md-card>\n      <md-card-title>Chart the stock Market</md-card-title>\n      <md-card-content>Angular app, with express server in the backend.<br />\n        App uses Quandl API, and SocketIO.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/chart_the_stock_market\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://enigmatic-dusk-97277.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n\n  <div class=\"leftProject\">\n    <div class=\"projectImg right\">\n      <img src=\"../../../assets/pokemon.png\" alt=\"Pokemon Trading Center\" />\n    </div>\n    <md-card>\n      <md-card-title>Pokemon Trading Center</md-card-title>\n      <md-card-content>Angular app, with node, express and mongodb in the backend.<br />\n        App uses PokeAPI and SocketIO.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/pokemon_trading_club\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://cryptic-dusk-78570.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n\n  <div class=\"rightProject\">\n    <div class=\"projectImg left\">\n      <img src=\"../../../assets/night.png\" alt=\"Nightlife Coordination App\" />\n    </div>\n    <md-card>\n      <md-card-title>Nightlife Coordination App</md-card-title>\n      <md-card-content>Angular app, with node, express and mongodb in the backend. <br />\n        App uses YealpAPI.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/voting_app\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://lychee-custard-64732.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n\n  <div class=\"leftProject\">\n    <div class=\"projectImg right\">\n      <img src=\"../../../assets/vote.png\" alt=\"Voting App\" />\n    </div>\n    <md-card>\n      <md-card-title>Voting App</md-card-title>\n      <md-card-content>Angular app, with node, express and mongodb in the backend. <br />\n        My first Angular app.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/voting_app\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://damp-coast-64326.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n\n</div>\n\n<div class=\"buttons\" [@enter]>\n  <a *ngIf=\"show !== 'main'\" class=\"waves-effect waves-light btn-large light-blue\" (click)=\"show = 'main'\">Main Projects <br /> (click to show)</a>\n  <a *ngIf=\"show !== 'remote'\" class=\"waves-effect waves-light btn-large light-blue\" (click)=\"show = 'remote'\">Remote Team Projects <br /> (click to show)</a>\n  <a *ngIf=\"show !== 'apps'\" class=\"waves-effect waves-light btn-large light-blue\" (click)=\"show = 'apps'\">Single Page Web Aplications <br /> (click to show)</a>\n</div>\n"
+module.exports = "<header>\n  <nav>\n    <div class=\"nav-wrapper\">\n      <ul class=\"left \">\n        <li class=\"tab\"><a (click)=\"show = 'Resume'\">Resume</a></li>\n        <li class=\"tab\"><a (click)=\"show = 'Portfolio'\">Portfolio</a></li>\n      </ul>\n    </div>\n  </nav>\n  <div class=\"heading\">\n    <h1 class=\"name\">Wojciech Ryba</h1>\n    <h5 class=\"name\">Junior Front-End Developer</h5>\n  </div>\n</header>\n<main>\n    <app-resume *ngIf=\"show === 'Resume'\"></app-resume>\n    <app-portfolio *ngIf=\"show === 'Portfolio'\"></app-portfolio>\n</main>\n<footer class=\"page-footer blue darken-1\" id=\"footer\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col l6 s12\">\n        <h5 class=\"white-text\">Contact Info</h5>\n        <p class=\"grey-text text-lighten-4\">You can contact me at wojryba@gmail.com</p>\n      </div>\n      <div class=\"col l4 offset-l2 s12\">\n        <a href=\"https://github.com/wojryba/\"><i class=\"fa fa-github fa-4x\" aria-hidden=\"true\"></i></a>\n        <a href=\"https://www.facebook.com/wojryba\"><i class=\"fa fa-facebook-official fa-4x\" aria-hidden=\"true\"></i></a>\n      </div>\n    </div>\n  </div>\n  <div class=\"footer-copyright\">\n    <div class=\"container\">\n    © 2017 Wojciech Ryba\n    </div>\n  </div>\n</footer>\n"
 
 /***/ }),
 
 /***/ 154:
 /***/ (function(module, exports) {
 
+module.exports = "<div class=\"projects\" *ngIf=\"show === 'main'\" [@enter]>\n  <div class=\"leftProject\">\n    <div class=\"projectImg right\">\n      <img src=\"../../../assets/momentum.png\" alt=\"Momentum Project\" />\n    </div>\n    <md-card>\n      <md-card-title>Spotify Clone</md-card-title>\n      <md-card-content>This is a clone of spotify website and it's WebPlayer. It uses mostly Angular together with Spotify WebApi. Node and Express are also in use.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/spotify_clone\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://github.com/wojryba/spotify_clone\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n  <div class=\"rightProject\">\n\n  </div>\n</div>\n\n<div class=\"projects\" *ngIf=\"show === 'remote'\" [@enter]>\n  <div class=\"leftProject\">\n    <div class=\"projectImg right\">\n      <img src=\"../../../assets/momentum.png\" alt=\"Momentum Project\" />\n    </div>\n    <md-card>\n      <md-card-title>Momentum Clone</md-card-title>\n      <md-card-content>A remote team project made with <a href=\"https://github.com/NinoMaj/\">Nino_maj</a> and <a href=\"https://github.com/loolys\">Looly</a>. <br />\n        React, Redux, Node, Express, MongoDB.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/momentum_clone-1\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://serene-stream-26049.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n  <div class=\"rightProject\">\n    <div class=\"projectImg left\">\n      <img src=\"../../../assets/bot.png\" alt=\"Slack bot Project\" />\n    </div>\n    <md-card>\n      <md-card-title>Number's Bot</md-card-title>\n      <md-card-content>Remote team project produced together with <a href=\"https://github.com/asanhix\">Asanhix</a>. <br />\n        Slack Bot made with Node.JS.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/A-F-Numbers-bot\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://rhubarb-pie-22231.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n</div>\n\n<div class=\"projects\" *ngIf=\"show === 'apps'\" [@enter]>\n  <div class=\"leftProject\">\n    <div class=\"projectImg right\">\n      <img src=\"../../../assets/picterest.png\" alt=\"Pinterest Clone\" />\n    </div>\n    <md-card>\n      <md-card-title>Pinterest Clone</md-card-title>\n      <md-card-content>Angular app, with node, express and mongodb in the backend.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/pinterest_clone\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://rocky-taiga-53739.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n\n  <div class=\"rightProject\">\n    <div class=\"projectImg left\">\n      <img src=\"../../../assets/stock.png\" alt=\"Chart the stock Market\" />\n    </div>\n    <md-card>\n      <md-card-title>Chart the stock Market</md-card-title>\n      <md-card-content>Angular app, with express server in the backend.<br />\n        App uses Quandl API, and SocketIO.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/chart_the_stock_market\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://enigmatic-dusk-97277.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n\n  <div class=\"leftProject\">\n    <div class=\"projectImg right\">\n      <img src=\"../../../assets/pokemon.png\" alt=\"Pokemon Trading Center\" />\n    </div>\n    <md-card>\n      <md-card-title>Pokemon Trading Center</md-card-title>\n      <md-card-content>Angular app, with node, express and mongodb in the backend.<br />\n        App uses PokeAPI and SocketIO.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/pokemon_trading_club\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://cryptic-dusk-78570.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n\n  <div class=\"rightProject\">\n    <div class=\"projectImg left\">\n      <img src=\"../../../assets/night.png\" alt=\"Nightlife Coordination App\" />\n    </div>\n    <md-card>\n      <md-card-title>Nightlife Coordination App</md-card-title>\n      <md-card-content>Angular app, with node, express and mongodb in the backend. <br />\n        App uses YealpAPI.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/voting_app\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://lychee-custard-64732.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n\n  <div class=\"leftProject\">\n    <div class=\"projectImg right\">\n      <img src=\"../../../assets/vote.png\" alt=\"Voting App\" />\n    </div>\n    <md-card>\n      <md-card-title>Voting App</md-card-title>\n      <md-card-content>Angular app, with node, express and mongodb in the backend. <br />\n        My first Angular app.\n      </md-card-content>\n      <md-card-actions>\n        <div class=\"projectIcons\">\n          <a href=\"https://github.com/wojryba/voting_app\"><i class=\"fa fa-github fa-3x\" aria-hidden=\"true\"></i></a>\n          <a href=\"https://damp-coast-64326.herokuapp.com/\"><img id=\"heroku\" src=\"../../../assets/heroku.png\" alt=\"Heroku Icon\"/></a>\n        </div>\n      </md-card-actions>\n    </md-card>\n  </div>\n\n</div>\n\n<div class=\"buttons\" [@enter]>\n  <a *ngIf=\"show !== 'main'\" class=\"waves-effect waves-light btn-large light-blue\" (click)=\"show = 'main'\">Main Projects <br /> (click to show)</a>\n  <a *ngIf=\"show !== 'remote'\" class=\"waves-effect waves-light btn-large light-blue\" (click)=\"show = 'remote'\">Remote Team Projects <br /> (click to show)</a>\n  <a *ngIf=\"show !== 'apps'\" class=\"waves-effect waves-light btn-large light-blue\" (click)=\"show = 'apps'\">Single Page Web Aplications <br /> (click to show)</a>\n</div>\n"
+
+/***/ }),
+
+/***/ 155:
+/***/ (function(module, exports) {
+
 module.exports = "<div class=\"top\" [@enter]>\n  <p>I'm 22 years old. Presently I live in Lublin. I've been learning FrontEnd development for the past half a year. Mostly, I've been workin with MEAN Stack. I posses experince in remote work with a team. Two projects were build this way, and third one is in the making. I'm a quick learner. I love to know how things work.</p>\n</div>\n<aside class=\"sidebar\" [@enter]>\n  <md-card>\n    <h4 class=\"accent-color\">Personal</h4>\n    <ul>\n      <li><strong>Name</strong> <span>Wojciech Ryba</span></li>\n      <li><strong>Birthday</strong> <span>13.08.1994</span></li>\n      <li><strong>Languages</strong> <span>Polish (native), <br /> English (fluent)</span></li>\n      <br />\n      <li><strong>Email</strong> <span>wojryba@gmail.com</span></li>\n    </ul>\n    <br />\n    <h4 class=\"accent-color\">Sofrwere</h4>\n    <ul>\n      <li>Studying more then 6 mounths.</li>\n      <li>Focused on FrontEnd.</li>\n      <li>Experience in remote work with a team.</li>\n      <li>Would love to work with Angular or React.</li>\n    </ul>\n  </md-card>\n</aside>\n<main class=\"mainResume\" [@enter]>\n  <h4 class=\"accent-color\">Skills:</h4>\n  <div class=\"list\">\n    <h5 class=\"accent-color\">Mostly Worked with:</h5>\n    <md-list>\n      <md-list-item>\n        <h5 md-line><i class=\"material-icons\">&#xE5CC;</i> Angular </h5>\n        <p md-line>My favorite framework.</p>\n      </md-list-item>\n      <md-list-item>\n        <h5 md-line><i class=\"material-icons\">&#xE5CC;</i> HTML/CSS/JavaScript </h5>\n        <p md-line>Practiced with every project.</p>\n      </md-list-item>\n      <md-list-item>\n        <h5 md-line><i class=\"material-icons\">&#xE5CC;</i> Node/Express </h5>\n        <p md-line>Finished FreeCodeCamp Back End Certificate.</p>\n      </md-list-item>\n      <md-list-item>\n        <h5 md-line><i class=\"material-icons\">&#xE5CC;</i> Git/GitHub </h5>\n      </md-list-item>\n    </md-list>\n    <h5 class=\"accent-color\">Also familiar with:</h5>\n    <md-list>\n      <md-list-item>\n        <p md-line> React&Redux - Used in remote team project - 'Momentum Clone'. </p>\n      </md-list-item>\n      <md-list-item>\n        <p md-line>MongoDB - With Moongoose.</p>\n      </md-list-item>\n      <md-list-item>\n        <p md-line> ES6 </p>\n      </md-list-item>\n      <md-list-item>\n        <p md-line>Bootstrap </p>\n      </md-list-item>\n    </md-list>\n  </div>\n</main>\n"
 
 /***/ }),
 
-/***/ 206:
+/***/ 207:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(81);
@@ -140,8 +140,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(152),
-        styles: [__webpack_require__(147)]
+        template: __webpack_require__(153),
+        styles: [__webpack_require__(148)]
     })
 ], AppComponent);
 
@@ -158,7 +158,7 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hammerjs__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hammerjs__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_hammerjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_material__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(89);
@@ -239,8 +239,8 @@ var PortfolioComponent = (function () {
 PortfolioComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Component */])({
         selector: 'app-portfolio',
-        template: __webpack_require__(153),
-        styles: [__webpack_require__(148)],
+        template: __webpack_require__(154),
+        styles: [__webpack_require__(149)],
         animations: [
             __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["a" /* trigger */])('enter', [
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["d" /* transition */])(':enter', [
@@ -285,8 +285,8 @@ var ResumeComponent = (function () {
 ResumeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Component */])({
         selector: 'app-resume',
-        template: __webpack_require__(154),
-        styles: [__webpack_require__(149)],
+        template: __webpack_require__(155),
+        styles: [__webpack_require__(150)],
         animations: [
             __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["a" /* trigger */])('enter', [
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["d" /* transition */])(':enter', [
@@ -320,5 +320,5 @@ var environment = {
 
 /***/ })
 
-},[206]);
+},[207]);
 //# sourceMappingURL=main.bundle.js.map
