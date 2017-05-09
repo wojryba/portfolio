@@ -75,6 +75,12 @@ body {
 }
 
 /* PORTFOLIO */
+.portfolio {
+  min-height: 3200px;
+  background-color: #EEEEEE;
+  padding: 1%;
+}
+
 .projects md-card {
   width: 40%;
   min-height: 310px;
@@ -82,6 +88,12 @@ body {
 
 .projects a {
   color: black;
+}
+
+.projects h3 {
+  clear: both;
+  text-align: center;
+  margin-top: 2%;
 }
 
 #heroku {
@@ -104,6 +116,16 @@ body {
   height: auto;
 }
 
+.leftProject {
+  clear: both;
+  padding-top: 4%;
+}
+
+.rightProject {
+  clear: both;
+  padding-top: 4%;
+}
+
 .leftProject md-card {
   float: left;
   border-bottom: 2px solid #BDBDBD;
@@ -124,19 +146,6 @@ body {
   float: left;
 }
 
-.buttons {
-  width: 100%;
-  padding: 4%;
-  text-align: center;
-  background-color: #EEEEEE;
-}
-
-.buttons a {
-  margin-top: 4%;
-  width: 400px;
-  height: 80px;
-  line-height: 40px;
-}
 
 /* FOOTER */
 footer a {
@@ -145,6 +154,38 @@ footer a {
 }
 
 /* MOBILE VIEW */
+@media (max-width: 768px) {
+  .portfolio {
+    min-height: 4900px;
+  }
+
+  .projects {
+    padding: 2%;
+  }
+
+  .projects md-card {
+    text-align: center;
+    width: 100%;
+    min-height: 0px;
+    margin-bottom: 20px;
+  }
+
+  .projectImg {
+    width: 100%;
+    min-height: 0px;
+    height: auto;
+  }
+
+  .projectImg img {
+    width: 100%;
+    min-height: 0px;
+    height: auto;
+    border: 2px solid #BDBDBD;
+    margin: 0;
+  }
+
+}
+
 @media (max-width: 460px) {
   body {
     margin: 0;
@@ -182,6 +223,10 @@ footer a {
   }
 
   /* PORTFOLIO */
+  .portfolio {
+    min-height: 3850px;
+  }
+
   .projects {
     padding: 2%;
   }
@@ -213,30 +258,8 @@ footer a {
   }
 }
 
-@media (max-width: 768px) {
-  .projects {
-    padding: 2%;
+@media (max-width: 376px) {
+  .portfolio {
+    min-height: 3700px;
   }
-
-  .projects md-card {
-    text-align: center;
-    width: 100%;
-    min-height: 0px;
-    margin-bottom: 20px;
-  }
-
-  .projectImg {
-    width: 100%;
-    min-height: 0px;
-    height: auto;
-  }
-
-  .projectImg img {
-    width: 100%;
-    min-height: 0px;
-    height: auto;
-    border: 2px solid #BDBDBD;
-    margin: 0;
-  }
-
 }
