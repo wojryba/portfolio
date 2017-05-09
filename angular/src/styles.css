@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  width: 1080px;
+  margin: auto;
+}
+
+.nav-wrapper {
+  background-color: #1976D2 !important;
+  margin: 0;
+}
+
+.heading {
+  margin: 0;
+  padding: 1%;
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
+.name  {
+  margin-left: 6%;
+}
+
+.accent-color {
+  color: #03A9F4;
+}
+
+.top {
+  background-color: #BBDEFB;
+  width: 100%;
+  padding: 2%;
+
+}
+
+.sidebar {
+  width: 30%;
+  height: 100%;
+  float: left;
+  line-height: 2em;
+  margin: 0;
+}
+
+.sidebar md-card {
+  height: 630px;
+}
+
+.sidebar span {
+  float: right;
+}
+
+.sidebar li {
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.mainResume {
+  width: 70%;
+  float: right;
+  padding: 2%;
+  min-height: 630px;
+  background-color: #EEEEEE;
+}
+
+.list {
+  margin-left: 4%;
+}
+
+.list p {
+  margin-left: 5%;
+}
+
+.projects md-card {
+  width: 40%;
+  min-height: 310px;
+}
+
+.projects a {
+  color: black;
+}
+
+#heroku {
+  margin-bottom: -2%;
+}
+
+.projectIcons {
+  text-align: center;
+}
+
+.projectImg {
+  width: 60%;
+  min-height: 310px;
+  height: auto;
+}
+
+.projectImg img {
+  width: 100%;
+  min-height: 310px;
+  height: auto;
+}
+
+.leftProject md-card {
+  float: left;
+  border-bottom: 2px solid #BDBDBD;
+  border-right: 2px solid #BDBDBD;
+}
+
+.rightProject md-card {
+  float: right;
+  border-bottom: 2px solid #BDBDBD;
+  border-left: 2px solid #BDBDBD;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.buttons {
+  width: 100%;
+  padding: 4%;
+  text-align: center;
+  background-color: #EEEEEE;
+}
+
+.buttons a {
+  margin-top: 4%;
+  width: 400px;
+  height: 80px;
+  line-height: 40px;
+}
+
+footer a {
+  color: black;
+  margin: 10%;
+}
