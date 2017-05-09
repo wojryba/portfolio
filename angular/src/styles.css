@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  width: 1080px;
+  max-width: 1080px;
   margin: auto;
 }
 
+/* NAV BAR AND HEADER */
 .nav-wrapper {
   background-color: #1976D2 !important;
   margin: 0;
@@ -20,6 +21,7 @@ body {
   margin-left: 6%;
 }
 
+/* RESUME */
 .accent-color {
   color: #03A9F4;
 }
@@ -31,12 +33,14 @@ body {
 
 }
 
+/* SIDEBAR */
 .sidebar {
   width: 30%;
   height: 100%;
   float: left;
   line-height: 2em;
   margin: 0;
+  background-color: white;
 }
 
 .sidebar md-card {
@@ -50,6 +54,8 @@ body {
 .sidebar li {
   border-bottom: 1px solid #BDBDBD;
 }
+
+/* MAIN PAGE */
 
 .mainResume {
   width: 70%;
@@ -67,6 +73,7 @@ body {
   margin-left: 5%;
 }
 
+/* PORTFOLIO */
 .projects md-card {
   width: 40%;
   min-height: 310px;
@@ -130,7 +137,105 @@ body {
   line-height: 40px;
 }
 
+/* FOOTER */
 footer a {
   color: black;
   margin: 10%;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 460px) {
+  body {
+    margin: 0;
+  }
+
+  .nav-wrapper {
+    width: 100%;
+  }
+
+  .heading {
+    text-align: center;
+    margin: 0;
+    padding: 1%;
+  }
+
+  /* RESUME */
+  .top {
+    font-size: 1.5em;
+    padding: 4%;
+  }
+
+  .sidebar {
+    float: none;
+    width: 100%;
+    min-height: 0px;
+  }
+
+  .sidebar md-card {
+    height: auto;
+  }
+
+  .mainResume {
+    width: 100%;
+    float: none;
+  }
+
+  /* PORTFOLIO */
+  .projects {
+    padding: 2%;
+  }
+
+  .projects md-card {
+    text-align: center;
+    width: auto;
+    min-height: 0px;
+    margin-bottom: 20px;
+  }
+
+  .projectImg {
+    width: 100%;
+    min-height: 0px;
+    height: auto;
+  }
+
+  .projectImg img {
+    width: 100%;
+    min-height: 0px;
+    height: auto;
+    border: 2px solid #BDBDBD;
+    margin: 0;
+  }
+
+
+  .buttons a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 2%;
+  }
+
+  .projects md-card {
+    text-align: center;
+    width: 100%;
+    min-height: 0px;
+    margin-bottom: 20px;
+  }
+
+  .projectImg {
+    width: 100%;
+    min-height: 0px;
+    height: auto;
+  }
+
+  .projectImg img {
+    width: 100%;
+    min-height: 0px;
+    height: auto;
+    border: 2px solid #BDBDBD;
+    margin: 0;
+  }
+
 }
