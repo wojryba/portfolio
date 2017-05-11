@@ -7,14 +7,14 @@ body {
 
 /* NAV BAR AND HEADER */
 .nav-wrapper {
-  background-color: #1976D2 !important;
+  background-color: #008CD4 !important;
   margin: 0;
 }
 
 .heading {
   margin: 0;
   padding: 1%;
-  background-color: #2196F3;
+  background-color: #09A4DD;
   color: #FFFFFF;
 }
 
@@ -24,11 +24,12 @@ body {
 
 /* RESUME */
 .accent-color {
-  color: #03A9F4;
+  color: #06a3e8;
 }
 
 .top {
-  background-color: #BBDEFB;
+  background-color: #576268;
+  color: #FFFFFF;
   width: 100%;
   padding: 2%;
 
@@ -63,7 +64,7 @@ body {
   float: right;
   padding: 2%;
   min-height: 630px;
-  background-color: #EEEEEE;
+  background-color: #EFEFEF;
 }
 
 .list {
@@ -77,7 +78,7 @@ body {
 /* PORTFOLIO */
 .portfolio {
   min-height: 3200px;
-  background-color: #EEEEEE;
+  background-color: #EFEFEF;
   padding: 1%;
 }
 
