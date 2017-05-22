@@ -1,64 +1,144 @@
-<div class="top" [@enter]>
-  <p>I'm 22 years old. Presently I live in Lublin. I've been learning FrontEnd development for the past half a year. Mostly, I've been working with MEAN Stack. I possess experience in remote work with a team. Two projects were build this way, and third one is in the making. I'm a quick learner. I love to know how things work.</p>
+<div class="top" [@enter] *ngIf="language === 'English'">
+  <p>I'm 22 years old, living in Lublin. I love to learn. I've been learning FrontEnd development for the past 7 months. I've been mostly working with MEAN Stack. Besides that, I've build two remote team projects, and third one is in the making (with React&Redux). I'm also familiar with Node.js environment, as well as with mongoDB. I have got FreeCodeCamp Back End Certificate. And currently, I'm looking for my first job!</p>
 </div>
-<aside class="sidebar" [@enter]>
+
+<div class="top" [@enter] *ngIf="language === 'Polish'">
+  <p>Mam 22 lata, obecnie mieszkam w Lublinie. Uczę się FrontEnd Development od ponad 7 miesięcy. Głównie pracowałem z MEAN Stack. Poza tym, wykonałem dwa projekty zespołowe, pracując zdalnie, a trzeci właśnie się tworzy (w React&Redux). Jestem także zaznajomiony z środowiskiem Node.js, a także z MongoDB. Posiadam certyfikat FreeCodeCamp Back End. Obecnie, poszukuję swej pierwszej pracy w branży.</p>
+</div>
+
+<aside class="sidebar" [@enter] *ngIf="language === 'English'">
   <md-card>
     <h4 class="accent-color">Personal</h4>
     <ul>
       <li><strong>Name</strong> <span>Wojciech Ryba</span></li>
       <li><strong>Birthday</strong> <span>13.08.1994</span></li>
-      <li><strong>Languages</strong> <span>Polish (native), <br /> English (fluent)</span></li>
+      <li><strong>Languages</strong> <span>Polish (native) <br /> English (fluent)</span></li>
       <br />
       <li><strong>Email</strong> <span>wojryba@gmail.com</span></li>
     </ul>
     <br />
     <h4 class="accent-color">Software</h4>
     <ul>
-      <li>Studying for more than 6 months.</li>
-      <li>Focused on FrontEnd.</li>
+      <li>More then 7 months of expirience.</li>
       <li>Experience in remote work with a team.</li>
       <li>FreeCodeCamp Back End Certificate.</li>
       <li>Would love to work with Angular or React.</li>
     </ul>
+    <br />
     <ul>
-      <li><a href="https://github.com/wojryba/">Github Repository</a></li>
-      <li><a href="https://desolate-island-96266.herokuapp.com/">Portfolio</a></li>
+      <li><a href="https://github.com/wojryba/">My Github Repository</a></li>
     </ul>
   </md-card>
 </aside>
-<main class="mainResume" [@enter]>
-  <h4 class="accent-color">Skills:</h4>
-  <h5 class="accent-color">Mostly Worked with:</h5>
-  <div class="list">
+
+<aside class="sidebar" [@enter] *ngIf="language === 'Polish'">
+  <md-card>
+    <h4 class="accent-color">Informacje osobiste</h4>
     <ul>
-      <li>
-        <p><i class="material-icons">&#xE876;</i> <strong>Angular</strong> <span> - My favorite framework.</span></p>
+      <li><strong>Imię</strong> <span>Wojciech Ryba</span></li>
+      <li><strong>Data urodzenia</strong> <span>13.08.1994</span></li>
+      <li><strong>Języki</strong> <span>Polski (ojczysty) <br /> Angielski (biegły)</span></li>
+      <br />
+      <li><strong>Email</strong> <span>wojryba@gmail.com</span></li>
+    </ul>
+    <br />
+    <h4 class="accent-color">Software</h4>
+    <ul>
+      <li>Ponad 7 miesięcy doświadczenia.</li>
+      <li>Doświadczenie w pracy zdalnej w zespole.</li>
+      <li>Certyfikat FreeCodeCamp Back End.</li>
+      <li>Chciabym pracować z Angular lub React.</li>
+    </ul>
+    <br />
+    <ul>
+      <li><a href="https://github.com/wojryba/">Moje Github Repository</a></li>
+    </ul>
+  </md-card>
+</aside>
+
+<main class="mainResume" [@enter] *ngIf="language === 'English'">
+  <h4 class="accent-color">My Skills:</h4>
+
+  <div class="list">
+    <h5 class="accent-color">I mostly Worked with:</h5>
+    <ul class="collection">
+      <li class="collection-item avatar grey lighten-5">
+        <img class="circle" src="../../../assets/angular.png" alt="angular" />
+        <span class="title"><strong>Angular</strong></span>
+        <p>My favorite framework.</p>
       </li>
-      <li>
-        <p><i class="material-icons">&#xE876;</i> <strong>HTML/CSS/JavaScript</strong> <span> - Practiced with every project.</span></p>
+      <li class="collection-item avatar grey lighten-5">
+        <img class="circle" src="../../../assets/webdevfront.jpg" alt="node" />
+        <span class="title"><strong>HTML/CSS/JavaScript</strong></span>
+        <p>Practiced with every project.</p>
       </li>
-      <li>
-        <p><i class="material-icons">&#xE876;</i> <strong>Node/Express</strong> <span> - Finished FreeCodeCamp Back End Certificate.</span></p>
+      <li class="collection-item avatar grey lighten-5">
+        <img class="circle" src="../../../assets/nodejs.png" alt="node" />
+        <span class="title"><strong>Node/Express</strong></span>
+        <p>Finished FreeCodeCamp Back End Certificate.</p>
       </li>
-      <li>
-        <p><i class="material-icons">&#xE876;</i> <strong>Git/GitHub</strong> </p>
+      <li class="collection-item avatar grey lighten-5">
+        <i class="fa fa-github fa-5x circle" aria-hidden="true"></i>
+        <span class="title"><strong>Git/GitHub</strong></span>
+      </li>
+    </ul>
+    <h5 class="accent-color">I'm also familiar with:</h5>
+    <ul class="collection">
+      <li class="collection-item grey lighten-5">
+        React&Redux - Used in remote team project - 'Momentum Clone'.
+      </li>
+      <li class="collection-item grey lighten-5">
+        MongoDB - With Moongoose.
+      </li>
+      <li class="collection-item grey lighten-5">
+        ES6
+      </li>
+      <li class="collection-item grey lighten-5">
+        Bootstrap
       </li>
     </ul>
   </div>
-  <h5 class="accent-color">Also familiar with:</h5>
+</main>
+
+<main class="mainResume" [@enter] *ngIf="language === 'Polish'">
+  <h4 class="accent-color">Me umiejętności:</h4>
+
   <div class="list">
-    <ul>
-      <li>
-        <p><i class="material-icons">&#xE5CC;</i> React&Redux - Used in remote team project - 'Momentum Clone'. </p>
+    <h5 class="accent-color">Głównie pracowałem z:</h5>
+    <ul class="collection">
+      <li class="collection-item avatar grey lighten-5">
+        <img class="circle" src="../../../assets/angular.png" alt="angular" />
+        <span class="title"><strong>Angular</strong></span>
+        <p>Mój ulubiony framework.</p>
       </li>
-      <li>
-        <p><i class="material-icons">&#xE5CC;</i> MongoDB - With Moongoose.</p>
+      <li class="collection-item avatar grey lighten-5">
+        <img class="circle" src="../../../assets/webdevfront.jpg" alt="node" />
+        <span class="title"><strong>HTML/CSS/JavaScript</strong></span>
+        <p>Ćwiczone przy każdym projekcie.</p>
       </li>
-      <li>
-        <p><i class="material-icons">&#xE5CC;</i> ES6 </p>
+      <li class="collection-item avatar grey lighten-5">
+        <img class="circle" src="../../../assets/nodejs.png" alt="node" />
+        <span class="title"><strong>Node/Express</strong></span>
+        <p>Uzyskałem FreeCodeCamp Back End Certificate.</p>
       </li>
-      <li>
-        <p><i class="material-icons">&#xE5CC;</i> Bootstrap </p>
+      <li class="collection-item avatar grey lighten-5">
+        <i class="fa fa-github fa-5x circle" aria-hidden="true"></i>
+        <span class="title"><strong>Git/GitHub</strong></span>
+      </li>
+    </ul>
+    <h5 class="accent-color">Jestem także zaznajomiony z:</h5>
+    <ul class="collection">
+      <li class="collection-item grey lighten-5">
+        React&Redux - użyty w zespołowym projekcie wykonanym zdalnie - "Klon Momentum".
+      </li>
+      <li class="collection-item grey lighten-5">
+        MongoDB - razem z Moongoose.
+      </li>
+      <li class="collection-item grey lighten-5">
+        ES6
+      </li>
+      <li class="collection-item grey lighten-5">
+        Bootstrap
       </li>
     </ul>
   </div>

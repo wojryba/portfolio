@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import 'hammerjs';
-import { MdCardModule, MdButtonModule } from '@angular/material';
+import { MdCardModule, MdButtonModule, MdMenuModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ResumeComponent } from './components/resume/resume.component';
@@ -22,7 +22,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     HttpModule,
     BrowserAnimationsModule,
     MdCardModule,
-    MdButtonModule
+    MdButtonModule,
+    MdMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

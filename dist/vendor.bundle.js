@@ -63005,7 +63005,7 @@ var ImportResolver = (function () {
 /* unused harmony export MdListIconCssMatStyler */
 /* unused harmony export MdListSubheaderCssMatStyler */
 /* unused harmony export MdListItem */
-/* unused harmony export MdMenuModule */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return MdMenuModule; });
 /* unused harmony export fadeInItems */
 /* unused harmony export transformMenu */
 /* unused harmony export MdMenu */

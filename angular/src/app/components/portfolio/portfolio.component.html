@@ -1,4 +1,4 @@
-<div class="portfolio">
+<div class="portfolio" *ngIf="language === 'English'">
   <div class="projects" [@enter]>
     <h3 class="accent-color">Projects</h3>
     <div class="leftProject">
@@ -141,6 +141,164 @@
         <md-card-title class="accent-color">Voting App</md-card-title>
         <md-card-content>Angular app, with node, express and mongodb in the backend. <br />
           My first Angular app.
+        </md-card-content>
+        <md-card-actions>
+          <div class="projectIcons">
+            <a href="https://github.com/wojryba/voting_app"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://damp-coast-64326.herokuapp.com/"><img id="heroku" src="../../../assets/heroku.png" alt="Heroku Icon"/></a>
+          </div>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="portfolio" *ngIf="language === 'Polish'">
+  <div class="projects" [@enter]>
+    <h3 class="accent-color">Projekty</h3>
+    <div class="leftProject">
+      <div class="projectImg right">
+        <img src="../../../assets/spotify.png" alt="Momentum Project" />
+      </div>
+      <md-card>
+        <md-card-title class="accent-color" class="accent-color">Klon Spotify</md-card-title>
+        <md-card-content>Klon Spotify Web Player. Aplikacja używa gówłnie Angular. BackEnd zrobiony w Node i Express.
+        </md-card-content>
+        <md-card-actions>
+          <div class="projectIcons">
+            <a href="https://github.com/wojryba/spotify_clone"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://enigmatic-sea-40799.herokuapp.com/"><img id="heroku" src="../../../assets/heroku.png" alt="Heroku Icon"/></a>
+          </div>
+        </md-card-actions>
+      </md-card>
+    </div>
+    <div class="rightProject">
+
+    </div>
+  </div>
+
+  <div class="projects" [@enter]>
+    <h3 class="accent-color">Zdalne Projekty Zespołowe</h3>
+    <div class="leftProject">
+      <div class="projectImg right">
+        <img src="../../../assets/momentum.png" alt="Momentum Project" />
+      </div>
+      <md-card>
+        <md-card-title class="accent-color" class="accent-color">Klon Momentum</md-card-title>
+        <md-card-content>Projekt zespołowy wykonany zdalnie, wspólnie z <a href="https://github.com/NinoMaj/">Nino_maj</a> i <a href="https://github.com/loolys">Looly</a>. <br />
+          React, Redux, Node, Express, MongoDB.
+        </md-card-content>
+        <md-card-actions>
+          <div class="projectIcons">
+            <a href="https://github.com/wojryba/momentum_clone-1"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://serene-stream-26049.herokuapp.com/"><img id="heroku" src="../../../assets/heroku.png" alt="Heroku Icon"/></a>
+          </div>
+        </md-card-actions>
+      </md-card>
+    </div>
+    <div class="rightProject">
+      <div class="projectImg left">
+        <img src="../../../assets/bot.png" alt="Slack bot Project" />
+      </div>
+      <md-card>
+        <md-card-title class="accent-color" class="accent-color">Number's Bot</md-card-title>
+        <md-card-content>Projekt zespołowy wykonany zdalnie, wspólnie z <a href="https://github.com/asanhix">Asanhix</a>. <br />
+          Slack Bot wykonany w Node.JS.
+        </md-card-content>
+        <md-card-actions>
+          <div class="projectIcons">
+            <a href="https://github.com/wojryba/A-F-Numbers-bot"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://rhubarb-pie-22231.herokuapp.com/"><img id="heroku" src="../../../assets/heroku.png" alt="Heroku Icon"/></a>
+          </div>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </div>
+
+  <div class="projects" [@enter]>
+    <h3 class="accent-color">Single Page Web Apps</h3>
+    <div class="leftProject">
+      <div class="projectImg right">
+        <img src="../../../assets/picterest.png" alt="Pinterest Clone" />
+      </div>
+      <md-card>
+        <md-card-title class="accent-color">Klon Pinterest</md-card-title>
+        <md-card-content>Aplikacja wykonana w Angular. Backend w  node, express, oraz mongodb.
+        </md-card-content>
+        <md-card-actions>
+          <div class="projectIcons">
+            <a href="https://github.com/wojryba/pinterest_clone"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://rocky-taiga-53739.herokuapp.com/"><img id="heroku" src="../../../assets/heroku.png" alt="Heroku Icon"/></a>
+          </div>
+        </md-card-actions>
+      </md-card>
+    </div>
+
+    <div class="rightProject">
+      <div class="projectImg left">
+        <img src="../../../assets/stock.png" alt="Chart the stock Market" />
+      </div>
+      <md-card>
+        <md-card-title class="accent-color">Chart the stock Market</md-card-title>
+        <md-card-content>Angular, z serverem w express.<br />
+          Aplikacja używa Quandl API, oraz SocketIO.
+        </md-card-content>
+        <md-card-actions>
+          <div class="projectIcons">
+            <a href="https://github.com/wojryba/chart_the_stock_market"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://enigmatic-dusk-97277.herokuapp.com/"><img id="heroku" src="../../../assets/heroku.png" alt="Heroku Icon"/></a>
+          </div>
+        </md-card-actions>
+      </md-card>
+    </div>
+
+    <div class="leftProject">
+      <div class="projectImg right">
+        <img src="../../../assets/pokemon.png" alt="Pokemon Trading Center" />
+      </div>
+      <md-card>
+        <md-card-title class="accent-color">Pokemon Trading Center</md-card-title>
+        <md-card-content>Aplikacja wykonana w Angular. Backend w  node, express, oraz mongodb..<br />
+          Aplikacja używa PokeAPI and SocketIO.
+        </md-card-content>
+        <md-card-actions>
+          <div class="projectIcons">
+            <a href="https://github.com/wojryba/pokemon_trading_club"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://cryptic-dusk-78570.herokuapp.com/"><img id="heroku" src="../../../assets/heroku.png" alt="Heroku Icon"/></a>
+          </div>
+        </md-card-actions>
+      </md-card>
+    </div>
+
+    <div class="rightProject">
+      <div class="projectImg left">
+        <img src="../../../assets/night.png" alt="Nightlife Coordination App" />
+      </div>
+      <md-card>
+        <md-card-title class="accent-color">Nightlife Coordination App</md-card-title>
+        <md-card-content>Aplikacja wykonana w Angular. Backend w  node, express, oraz mongodb. <br />
+          Aplikacja używa YealpAPI.
+        </md-card-content>
+        <md-card-actions>
+          <div class="projectIcons">
+            <a href="https://github.com/wojryba/voting_app"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://lychee-custard-64732.herokuapp.com/"><img id="heroku" src="../../../assets/heroku.png" alt="Heroku Icon"/></a>
+          </div>
+        </md-card-actions>
+      </md-card>
+    </div>
+
+    <div class="leftProject">
+      <div class="projectImg right">
+        <img src="../../../assets/vote.png" alt="Voting App" />
+      </div>
+      <md-card>
+        <md-card-title class="accent-color">Voting App</md-card-title>
+        <md-card-content>Aplikacja wykonana w Angular. Backend w  node, express, oraz mongodb. <br />
+          Moja pierwsza strona wykonana w Angular.
         </md-card-content>
         <md-card-actions>
           <div class="projectIcons">

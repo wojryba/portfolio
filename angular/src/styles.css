@@ -5,6 +5,12 @@ body {
   margin: auto;
 }
 
+.loading {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+}
+
 /* NAV BAR AND HEADER */
 .nav-wrapper {
   background-color: #008CD4 !important;
@@ -28,7 +34,7 @@ body {
 }
 
 .top {
-  background-color: #576268;
+  background-color: #5B666C;
   color: #FFFFFF;
   width: 100%;
   padding: 2%;
@@ -46,7 +52,7 @@ body {
 }
 
 .sidebar md-card {
-  height: 690px;
+  height: 730px;
 }
 
 .sidebar span {
@@ -63,22 +69,22 @@ body {
   width: 70%;
   float: right;
   padding: 2%;
-  min-height: 690px;
-  background-color: #EFEFEF;
+  min-height: 730px;
+  background-color: #F8F8F8;
 }
 
 .list {
   margin-left: 4%;
 }
 
-.list li {
-  border-bottom: 1px solid #BDBDBD;
+.list img {
+  filter: grayscale(100%);
 }
 
 /* PORTFOLIO */
 .portfolio {
   min-height: 3200px;
-  background-color: #EFEFEF;
+  background-color: #F8F8F8;
   padding: 1%;
 }
 
@@ -156,9 +162,6 @@ footer a {
 
 .container p {
   color: #FFFFFF;
-  text-align: center;
-  font-style: italic;
-  font-size: 0.8em;
 }
 
 
@@ -242,7 +245,7 @@ footer a {
 
   .projects md-card {
     text-align: center;
-    width: auto;
+    width: 100%;
     min-height: 0px;
     margin-bottom: 20px;
   }

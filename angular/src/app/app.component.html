@@ -5,6 +5,15 @@
         <li class="tab"><a (click)="show = 'Resume'">Resume</a></li>
         <li class="tab"><a (click)="show = 'Portfolio'">Portfolio</a></li>
       </ul>
+      <ul class="right">
+        <li class="tab">
+          <a class='dropdown-button' data-hover="true" data-alignment="right" data-beloworigin="true" data-activates='dropdown1'>Język/Language</a>
+        </li>
+      </ul>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a (click)="language = 'Polish'">Polski</a></li>
+        <li><a (click)="language = 'English'">English</a></li>
+      </ul>
     </div>
   </nav>
   <div class="heading">
@@ -13,15 +22,35 @@
   </div>
 </header>
 <main>
-    <app-resume *ngIf="show === 'Resume'"></app-resume>
-    <app-portfolio *ngIf="show === 'Portfolio'"></app-portfolio>
+    <app-resume *ngIf="show === 'Resume'" [language]="language"></app-resume>
+    <app-portfolio *ngIf="show === 'Portfolio'" [language]="language"></app-portfolio>
 </main>
-<footer class="page-footer blue darken-1" id="footer">
+<footer class="page-footer blue darken-1" id="footer" *ngIf="language === 'English'">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
         <h5 class="white-text">Contact Info</h5>
         <p class="grey-text text-lighten-4">You can contact me at wojryba@gmail.com</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <a href="https://github.com/wojryba/"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/wojryba"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2017 Wojciech Ryba
+    </div>
+  </div>
+</footer>
+
+<footer class="page-footer blue darken-1" id="footer" *ngIf="language === 'Polish'">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Informacje kontaktowe:</h5>
+        <p class="grey-text text-lighten-4">Email: wojryba@gmail.com</p>
       </div>
       <div class="col l4 offset-l2 s12">
         <a href="https://github.com/wojryba/"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>

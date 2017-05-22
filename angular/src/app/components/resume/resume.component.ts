@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
@@ -15,7 +15,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]
 })
 export class ResumeComponent implements OnInit {
-
+  @Input() language;
   constructor() { }
 
   ngOnInit() {
