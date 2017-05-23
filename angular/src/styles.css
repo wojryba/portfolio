@@ -112,7 +112,7 @@ body {
   width: 60%;
   min-height: 310px;
   height: auto;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .background-link {
@@ -254,7 +254,7 @@ footer a {
 
   /* PORTFOLIO */
   .portfolio {
-    min-height: 3850px;
+    min-height: 4020px;
   }
 
   .projects {
@@ -268,18 +268,16 @@ footer a {
     margin-bottom: 20px;
   }
 
-  .projectImg {
-    width: 100%;
-    min-height: 0px;
-    height: auto;
+  .background-link {
+    min-height: 200px;
   }
 
-  .projectImg img {
+  .projectImg {
     width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 0px;
-    height: auto;
-    border: 2px solid #BDBDBD;
-    margin: 0;
   }
 
 
@@ -292,169 +290,7 @@ footer a {
   .portfolio {
     min-height: 3700px;
   }
-}
-
-@media print {
-  @import '~@angular/material/prebuilt-themes/indigo-pink.css';
-  body {
-    max-width: 1080px;
-    margin: auto;
+  .background-link {
+    min-height: 150px;
   }
-
-  /* NAV BAR AND HEADER */
-  .nav-wrapper {
-    background-color: #008CD4 !important;
-    margin: 0;
-  }
-
-  .heading {
-    margin: 0;
-    padding: 1%;
-    background-color: #09A4DD;
-    color: #FFFFFF;
-  }
-
-  .name  {
-    margin-left: 6%;
-  }
-
-  /* RESUME */
-  .accent-color {
-    color: #06a3e8 !important;
-  }
-
-  .top {
-    background-color: #576268;
-    color: #FFFFFF;
-    width: 100%;
-    padding: 2%;
-
-  }
-
-  /* SIDEBAR */
-  .sidebar {
-    width: 30%;
-    height: 100%;
-    float: left;
-    line-height: 2em;
-    margin: 0;
-    background-color: white;
-  }
-
-  .sidebar md-card {
-    height: 690px;
-  }
-
-  .sidebar span {
-    float: right;
-  }
-
-  .sidebar li {
-    border-bottom: 1px solid #BDBDBD;
-  }
-
-  /* MAIN PAGE */
-
-  .mainResume {
-    width: 70%;
-    float: right;
-    padding: 2%;
-    min-height: 690px;
-    background-color: #EFEFEF;
-  }
-
-  .list {
-    margin-left: 4%;
-  }
-
-  .list li {
-    border-bottom: 1px solid #BDBDBD;
-  }
-
-  /* PORTFOLIO */
-  .portfolio {
-    min-height: 3200px;
-    background-color: #EFEFEF;
-    padding: 1%;
-  }
-
-  .projects md-card {
-    width: 40%;
-    min-height: 310px;
-  }
-
-  .projects a {
-    color: black;
-  }
-
-  .projects h3 {
-    clear: both;
-    text-align: center;
-    margin-top: 2%;
-  }
-
-  #heroku {
-    margin-bottom: -2%;
-  }
-
-  .projectIcons {
-    text-align: center;
-  }
-
-  .projectImg {
-    width: 60%;
-    min-height: 310px;
-    height: auto;
-  }
-
-  .projectImg img {
-    width: 100%;
-    min-height: 310px;
-    height: auto;
-  }
-
-  .leftProject {
-    clear: both;
-    padding-top: 4%;
-  }
-
-  .rightProject {
-    clear: both;
-    padding-top: 4%;
-  }
-
-  .leftProject md-card {
-    float: left;
-    border-bottom: 2px solid #BDBDBD;
-    border-right: 2px solid #BDBDBD;
-  }
-
-  .rightProject md-card {
-    float: right;
-    border-bottom: 2px solid #BDBDBD;
-    border-left: 2px solid #BDBDBD;
-  }
-
-  .right {
-    float: right;
-  }
-
-  .left {
-    float: left;
-  }
-
-
-  /* FOOTER */
-  footer a {
-    color: black;
-    margin: 10%;
-  }
-
-  .container p {
-    color: #FFFFFF;
-    text-align: center;
-    font-style: italic;
-    font-size: 0.8em;
-  }
-
 }
