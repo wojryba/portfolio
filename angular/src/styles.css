@@ -83,7 +83,7 @@ body {
 
 /* PORTFOLIO */
 .portfolio {
-  min-height: 3200px;
+  min-height: 3500px;
   background-color: #F8F8F8;
   padding: 1%;
 }
@@ -186,7 +186,7 @@ footer a {
 /* MOBILE VIEW */
 @media (max-width: 768px) {
   .portfolio {
-    min-height: 4900px;
+    min-height: 5500px;
   }
 
   .projects {
@@ -239,8 +239,9 @@ footer a {
 
   .sidebar {
     float: none;
-    width: 100%;
+    width: 95%;
     min-height: 0px;
+    margin: auto;
   }
 
   .sidebar md-card {
@@ -254,7 +255,7 @@ footer a {
 
   /* PORTFOLIO */
   .portfolio {
-    min-height: 4020px;
+    min-height: 4500px;
   }
 
   .projects {
@@ -288,8 +289,13 @@ footer a {
 
 @media (max-width: 376px) {
   .portfolio {
-    min-height: 3700px;
+    min-height: 4250px;
   }
+
+  .projectImg {
+    margin-bottom: 10px;
+  }
+
   .background-link {
     min-height: 150px;
   }
